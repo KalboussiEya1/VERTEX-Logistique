@@ -4,3 +4,4 @@ openai
 rapidfuzz
 openpyxl
 xlsxwriter
+python-dotenv
