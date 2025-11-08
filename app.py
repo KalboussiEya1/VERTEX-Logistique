@@ -175,12 +175,12 @@ if os.path.exists(LOGO_I2L):
 
 # Titre + texte
 st.markdown('<div class="big-title">VERTEX</div>', unsafe_allow_html=True)
-st.markdown('<div class="small-subtitle">L’assistant IA de l’Ecole d’Ingénieurs I²L de Metz</div>', unsafe_allow_html=True)
+st.markdown('<div class="small-subtitle">L’assistant IA de l’Ecole d’Ingénieurs I²L de Metz pour la logistique : </div>', unsafe_allow_html=True)
 
 # ---------------------------
 # 6) Input + uploader
 # ---------------------------
-prompt = st.text_input("", placeholder="Écrire un message...")
+prompt = st.text_input("", placeholder="Formuler votre prompt logistique pour VERTEX")
 
 uploaded_file = st.file_uploader("Importer un fichier (PDF, TXT, CSV, XLSX)", 
                                  type=["pdf", "txt", "csv", "xlsx"])
