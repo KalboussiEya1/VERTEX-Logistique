@@ -27,6 +27,18 @@ client = OpenAI(api_key=API_KEY)
 # 2) Page config
 # ---------------------------
 st.set_page_config(page_title="VERTEX - Assistant Logistique", layout="centered")
+st.markdown("""
+<!-- Lien vers le manifeste PWA -->
+<link rel="manifest" href="/static/manifest.json">
+
+<!-- Couleur de la barre de navigateur -->
+<meta name="theme-color" content="#004B8D">
+
+<!-- Pour iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VERTEX">
+<link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+""", unsafe_allow_html=True)
 
 # ---------------------------
 # 3) CSS
